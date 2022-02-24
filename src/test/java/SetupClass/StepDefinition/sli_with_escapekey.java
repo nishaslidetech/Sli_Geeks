@@ -30,27 +30,27 @@ public class sli_with_escapekey extends Setupclass {
 
 	@Then("Enter data in search filed")
 	public void enter_data_in_search_filed() throws Throwable {
-		WebElement search_field = wait
+		/*WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
 		search_field.sendKeys("HR");
-		Thread.sleep(1000);
+		Thread.sleep(1000);*/
 	}
 
 	@Then("press escape key")
 	public void press_escape_key() throws Throwable {
-		try {
+		/*try {
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ESCAPE);
 			Thread.sleep(1000);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(3000);
 		} catch (AWTException e) {
-		}
+		}*/
 	}
 
 	@Then("verify the pop-up")
 	public void verify_the_pop_up() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(1000);
 			boolean pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']")).isDisplayed();
 			System.out.println("pop-up is displayed  " + pop_up_Value);
@@ -65,22 +65,22 @@ public class sli_with_escapekey extends Setupclass {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 		
-		}
+		}*/
 	}
 
 	@Then("Click on login button")
 	public void click_on_login_button() throws Throwable {
 		
-		WebElement sign_In = wait
+		/*WebElement sign_In = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Login']")));
 		js.executeScript("arguments[0].click();", sign_In);
 		//sign_In.click();
-		Thread.sleep(2000);
+		Thread.sleep(2000);*/
 	}
 
 	@Then("Enter free valid username and password")
 	public void enter_free_valid_username_and_password() throws Throwable {
-		try {
+		/*try {
 			WebElement email = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='E-mail Address']")));
 			email.sendKeys("nisha.dhiman@slidetech.in");
@@ -93,28 +93,28 @@ public class sli_with_escapekey extends Setupclass {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 		
-		}
+		}*/
 	}
 
 	@Then("Enter Data in Search filed")
 	public void Enter_data_in_search_filed() throws Exception {
-		WebElement search_field1 = wait
+		/*WebElement search_field1 = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
 		search_field1.sendKeys("HR");
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
 
 	}
 
 	@Then("Press Escape key")
 	public void press_Escape_key() throws Throwable {
-		try {
+		/*try {
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ESCAPE);
 			Thread.sleep(1000);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(3000);
 		} catch (AWTException e) {
-		}
+		}*/
 	}
 
 	@Then("verify the Pop-up")
