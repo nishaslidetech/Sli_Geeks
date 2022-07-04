@@ -60,6 +60,10 @@ public class Setupclass {
 		else if ((local_FFbrowser.equals("yes"))) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			wait = new WebDriverWait(driver, 30);
+			js = (JavascriptExecutor) driver;
+			driver.manage().window().maximize();
 
 			Thread.sleep(1000);
 		} else {
