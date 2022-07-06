@@ -3,46 +3,64 @@
     "line": 2,
     "elements": [
       {
+        "start_timestamp": "2022-07-06T09:36:59.090Z",
         "line": 3,
         "name": "Test SLI Pages",
         "description": "",
         "id": "sli-search;test-sli-pages",
+        "after": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupClass.StepDefinition.TakeImageStep.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2413780100,
+              "duration": 3004600,
               "status": "passed"
             },
             "line": 5,
             "name": "Open the website URL.",
             "match": {
-              "location": "sli_search.open_the_website_URL()"
+              "location": "SetupClass.StepDefinition.sli_search.open_the_website_URL()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 118034979300,
               "status": "passed"
             },
             "line": 6,
             "name": "enter a keyword to search.",
             "match": {
-              "location": "enter a keyword to search()"
+              "location": "SetupClass.StepDefinition.sli_search.enter_a_keyword_to_search()"
             },
+            "keyword": "Then "
+          },
           {
             "result": {
-              "duration": 118034979300,
+              "duration": 86157336200,
               "status": "passed"
             },
             "line": 7,
             "name": "enter a keyword to search and filter.",
             "match": {
-              "location": "enter a keyword to search and filter()"
+              "location": "SetupClass.StepDefinition.sli_search.enter_a_keyword_to_search_and_filter()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sli_search"
           }
         ]
       }
@@ -51,11 +69,15 @@
     "description": "",
     "id": "sli-search",
     "keyword": "Feature",
-    "uri": "src/test/java/Features/sli.search.feature",
+    "uri": "file:src/test/java/Features/sli.search.feature",
     "tags": [
       {
-        "line": 1,
-        "name": "@sli_search"
+        "name": "@sli_search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
       }
     ]
   }

@@ -1,18 +1,9 @@
 package SetupClass.StepDefinition;
 
-import static org.junit.Assert.assertTrue;
-
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import SetupClass.Setupclass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
 
 public class sli_with_escapekey extends Setupclass {
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="120.448759">
-<testcase classname="SLI Search" name="Test SLI Pages" time="120.448759">
-<system-out><![CDATA[Given Open the website URL..................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="86.458">
+    <testcase classname="SLI Search" name="Test SLI Pages" time="86.257">
+        <system-out><![CDATA[Given Open the website URL..................................................passed
 Then enter a keyword to search..............................................passed
+Then enter a keyword to search and filter...................................passed
 ]]></system-out>
-</testcase>
+    </testcase>
 </testsuite>

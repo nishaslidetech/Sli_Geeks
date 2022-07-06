@@ -5,13 +5,13 @@
       {
         "name": "Open the website URL.",
         "aggregatedDurations": {
-          "average": 2.4137801,
-          "median": 2.4137801
+          "median": 0.0030046,
+          "average": 0.0030046
         },
         "durations": [
           {
-            "duration": 2.4137801,
-            "location": "src/test/java/Features/sli.search.feature:5"
+            "duration": 0.0030046,
+            "location": "file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:5"
           }
         ]
       }
@@ -23,13 +23,31 @@
       {
         "name": "enter a keyword to search.",
         "aggregatedDurations": {
-          "average": 118.0349793,
-          "median": 118.0349793
+          "median": 0.0,
+          "average": 0.0
         },
         "durations": [
           {
-            "duration": 118.0349793,
-            "location": "src/test/java/Features/sli.search.feature:6"
+            "duration": 0.0,
+            "location": "file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^enter a keyword to search and filter\\.$",
+    "steps": [
+      {
+        "name": "enter a keyword to search and filter.",
+        "aggregatedDurations": {
+          "median": 86.1573362,
+          "average": 86.1573362
+        },
+        "durations": [
+          {
+            "duration": 86.1573362,
+            "location": "file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:7"
           }
         ]
       }
