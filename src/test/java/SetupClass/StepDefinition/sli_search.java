@@ -270,68 +270,66 @@ public class sli_search extends Setupclass {
 		View_More.click();
 		Thread.sleep(5000);
 
-		Thread.sleep(3000);
+		/*
+		 * WebElement sort =
+		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//b[@role='presentation']"))); Thread.sleep(3000); sort.click();
+		 * 
+		 * WebElement popularity= wait.until(ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//div[@class='product-info sli_generic_container']//a[@class='sli_pages'][normalize-space()='7']"
+		 * ))); Thread.sleep(3000); sort.click();
+		 */
 
 		/*
-		 * WebElement Sort= driver.findElement(By.
-		 * cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"
-		 * )); js.executeScript("arguments[0].scrollIntoView();",Sort);
+		 * WebElement Sort = driver.findElement(By.cssSelector(
+		 * "#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"
+		 * )); js.executeScript("arguments[0].scrollIntoView();", Sort);
 		 * Thread.sleep(3000); Sort.click();
 		 * 
 		 * selectValue =
 		 * driver.findElement(By.xpath("//ul[@class ='select2-results__options']"));
 		 * Thread.sleep(2000); Select sortBy = new Select(selectValue);
-		 * Thread.sleep(2000); List <WebElement> elementCount = sortBy.getOptions();
-		 * System.out.println(elementCount.size());
-		 * //sortBy.selectByVisibleText("Newest");
+		 * Thread.sleep(2000); List<WebElement> elementCount = sortBy.getOptions();
+		 * System.out.println(elementCount.size()); //
+		 * sortBy.selectByVisibleText("Newest");
 		 * 
 		 * WebElement Newest = driver.findElement(By.xpath("//*[text()='Newest']"));
 		 * Thread.sleep(3000); Newest.click(); Thread.sleep(8000);
 		 * 
-		 * 
-		 * 
-		 * 
-		 * WebElement Sort1 = driver.findElement(By.
-		 * cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"
-		 * )); js.executeScript("arguments[0].scrollIntoView();",Sort1);
+		 * WebElement Sort1 = driver.findElement(By.cssSelector(
+		 * "#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"
+		 * )); js.executeScript("arguments[0].scrollIntoView();", Sort1);
 		 * Thread.sleep(3000); Sort1.click();
-		 * 
 		 * 
 		 * WebElement Popularity =
 		 * driver.findElement(By.xpath("//*[text()='Popularity']")); Thread.sleep(3000);
 		 * Popularity.click(); Thread.sleep(3000);
 		 * 
-		 * WebElement Sort2 = driver.findElement(By.
-		 * cssSelector("#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"
-		 * )); js.executeScript("arguments[0].scrollIntoView();",Sort2);
+		 * WebElement Sort2 = driver.findElement(By.cssSelector(
+		 * "#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.right-col.sli_generic_container > div > div.form-group.sort-selection.sli_sorts > form > span > span.selection > span > span.select2-selection__arrow > b"
+		 * )); js.executeScript("arguments[0].scrollIntoView();", Sort2);
 		 * Thread.sleep(3000); Sort2.click();
 		 * 
 		 * WebElement Most_downloaded =
 		 * driver.findElement(By.xpath("//*[text()='Most Downloaded']"));
 		 * Thread.sleep(3000); Most_downloaded.click(); Thread.sleep(3000);
+		 * 
+		 * WebElement Category = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//ul[@id='facet-cat1']//li[1]")));
+		 * 
+		 * Thread.sleep(3000); Category.click(); Thread.sleep(3000);
+		 * 
+		 * WebElement Stage = wait.until(ExpectedConditions .elementToBeClickable(By.
+		 * cssSelector("#facet-stages > li:nth-child(4) > input[type=checkbox]")));
+		 * js.executeScript("arguments[0].scrollIntoView();", Stage);
+		 * Thread.sleep(3000); Stage.click(); Thread.sleep(3000);
+		 * 
+		 * String str = driver.findElement(By.cssSelector(
+		 * "#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.left-col.sli_generic_container > div > div"
+		 * )) .getText(); System.out.println("Total Number of Products ----" + str);
+		 * Thread.sleep(3000); driver.navigate().refresh(); Thread.sleep(3800);
 		 */
-
-		WebElement Category = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//ul[@id='facet-cat1']//li[1]")));
-
-		Thread.sleep(3000);
-		Category.click();
-		Thread.sleep(3000);
-
-		WebElement Stage = wait.until(ExpectedConditions
-				.elementToBeClickable(By.cssSelector("#facet-stages > li:nth-child(4) > input[type=checkbox]")));
-		js.executeScript("arguments[0].scrollIntoView();", Stage);
-		Thread.sleep(3000);
-		Stage.click();
-		Thread.sleep(3000);
-
-		String str = driver.findElement(By.cssSelector(
-				"#sli_content_wrapper > section.product-list-wrapper.sli_generic_container > div.container.sli_generic_container > div > div.left-col.sli_generic_container > div > div"))
-				.getText();
-		System.out.println("Total Number of Products ----" + str);
-		Thread.sleep(3000);
-		driver.navigate().refresh();
-		Thread.sleep(3800);
 
 	}
 

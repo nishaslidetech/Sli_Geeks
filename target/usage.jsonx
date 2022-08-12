@@ -5,12 +5,12 @@
       {
         "name": "Open the website URL.",
         "aggregatedDurations": {
-          "median": 0.0030046,
-          "average": 0.0030046
+          "median": 50.3701756,
+          "average": 50.3701756
         },
         "durations": [
           {
-            "duration": 0.0030046,
+            "duration": 50.3701756,
             "location": "file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:5"
           }
         ]
@@ -23,31 +23,13 @@
       {
         "name": "enter a keyword to search.",
         "aggregatedDurations": {
-          "median": 0.0,
-          "average": 0.0
+          "median": 9.998E-4,
+          "average": 9.998E-4
         },
         "durations": [
           {
-            "duration": 0.0,
+            "duration": 9.998E-4,
             "location": "file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^enter a keyword to search and filter\\.$",
-    "steps": [
-      {
-        "name": "enter a keyword to search and filter.",
-        "aggregatedDurations": {
-          "median": 86.1573362,
-          "average": 86.1573362
-        },
-        "durations": [
-          {
-            "duration": 86.1573362,
-            "location": "file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:7"
           }
         ]
       }
