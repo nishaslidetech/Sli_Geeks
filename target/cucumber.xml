@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="96.883">
-    <testcase classname="SLI Search" name="Test SLI Pages" time="96.406">
-        <failure message="Element should have been &quot;select&quot; but was &quot;ul&quot;&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.support.ui.UnexpectedTagNameException"><![CDATA[Given Open the website URL..................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="66.288">
+    <testcase classname="SLI Search" name="Test SLI Pages" time="66.08">
+        <system-out><![CDATA[Given Open the website URL..................................................passed
 Then enter a keyword to search..............................................passed
-Then enter a keyword to search and filter...................................failed
-
-StackTrace:
-org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "ul"
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
-	at SetupClass.StepDefinition.sli_search.enter_a_keyword_to_search_and_filter(sli_search.java:254)
-	at ✽.enter a keyword to search and filter.(file:///D:/Selenium%20Live%20Projects/Sli_Geeks/./src/test/java/Features/sli.search.feature:7)
-]]></failure>
+Then enter a keyword to search and filter...................................passed
+]]></system-out>
     </testcase>
 </testsuite>

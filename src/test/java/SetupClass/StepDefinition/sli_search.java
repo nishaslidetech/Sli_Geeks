@@ -97,8 +97,9 @@ public class sli_search extends Setupclass {
 				throw new IOException("Element Should not be visible");
 
 			} else {
-				System.out.println("Element is Not Visible"); // 
-				//js.executeScript("alert('Product Suggestion Box did not appeared after Keyword Removal');");
+				System.out.println("Element is Not Visible"); //
+				// js.executeScript("alert('Product Suggestion Box did not appeared after
+				// Keyword Removal');");
 			}
 			driver.navigate().refresh();
 			Thread.sleep(3800);
@@ -270,15 +271,24 @@ public class sli_search extends Setupclass {
 		View_More.click();
 		Thread.sleep(5000);
 
-		/*
-		 * WebElement sort =
-		 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-		 * "//b[@role='presentation']"))); Thread.sleep(3000); sort.click();
-		 * 
-		 * WebElement popularity= wait.until(ExpectedConditions.elementToBeClickable(By.
-		 * xpath("//div[@class='product-info sli_generic_container']//a[@class='sli_pages'][normalize-space()='7']"
-		 * ))); Thread.sleep(3000); sort.click();
-		 */
+		WebElement sort = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[@role='presentation']")));
+		Thread.sleep(3000);
+		sort.click();
+
+		WebElement popularity = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//span[@class ='select2-results']//ul//li[1]")));
+		Thread.sleep(1000);
+		popularity.click();
+
+		WebElement Newest = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//span[@class ='select2-results']//ul//li[2]")));
+		Thread.sleep(1000);
+		Newest.click();
+
+		WebElement mostDownloaded = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//span[@class ='select2-results']//ul//li[3]")));
+		Thread.sleep(1000);
+		mostDownloaded.click();
 
 		/*
 		 * WebElement Sort = driver.findElement(By.cssSelector(
