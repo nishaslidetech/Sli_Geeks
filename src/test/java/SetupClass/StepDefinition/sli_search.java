@@ -279,11 +279,22 @@ public class sli_search extends Setupclass {
 				ExpectedConditions.elementToBeClickable(By.xpath("//span[@class ='select2-results']//ul//li[1]")));
 		Thread.sleep(1000);
 		popularity.click();
+		Thread.sleep(3000);
+
+		WebElement sort1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[@role='presentation']")));
+		Thread.sleep(3000);
+		sort1.click();
+		Thread.sleep(3000);
 
 		WebElement Newest = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//span[@class ='select2-results']//ul//li[2]")));
 		Thread.sleep(1000);
 		Newest.click();
+		
+		WebElement sort2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[@role='presentation']")));
+		Thread.sleep(3000);
+		sort2.click();
+		Thread.sleep(3000);
 
 		WebElement mostDownloaded = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//span[@class ='select2-results']//ul//li[3]")));
