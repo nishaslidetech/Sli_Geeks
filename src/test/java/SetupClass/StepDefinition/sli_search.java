@@ -291,6 +291,7 @@ public class sli_search extends Setupclass {
 		Thread.sleep(1000);
 		Newest.click();
 		
+		Thread.sleep(3000);
 		WebElement sort2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//b[@role='presentation']")));
 		Thread.sleep(3000);
 		sort2.click();
